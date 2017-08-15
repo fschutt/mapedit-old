@@ -1,0 +1,35 @@
+#pragma once
+
+#include <map>
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <ft2build.h>
+#include FT_FREETYPE_H
+
+#include "glm/glm.hpp"
+
+struct Character
+{
+    GLuint              textureID;
+    glm::ivec2          size;
+    glm::ivec2          bearing;
+    long int            advance;
+};
+
+struct StaticText
+{
+    StaticText(unsigned int sz);
+    ~StaticText();
+
+    FT_Library ft;
+    FT_Face face;
+    std::map<GLchar, Character> characters;
+    const unsigned char* text;
+    unsigned int sz; //text size
+    static GLuint characterIndices[];
+    GLuint VAO, VBO, shaderProgram, EBO;
+    glm::mat4 projection;
+
+    void init(unsigned int& width, unsigned int& height);
+    void draw(const char* text, GLfloat offsetX, GLfloat offsetY, GLfloat scale, glm::vec3 color);
+};

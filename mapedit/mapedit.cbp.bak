@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MapEdit" />
+		<Option execution_dir="../build" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug [UNIX]">
+				<Option platforms="Unix;" />
+				<Option output="build/mapedit" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="build" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c++0x" />
+					<Add option="-pg" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option='-DPROJECT_NAME=&quot;MapEdit&quot;' />
+					<Add option="-DMAJOR_VER=0" />
+					<Add option="-DMINOR_VER=0" />
+					<Add option="-DPATCH_VER=1" />
+					<Add option="-DHARDWARE_RENDERER" />
+					<Add option="-DLANG=EN_US" />
+					<Add option="-DDEBUG" />
+					<Add directory="../inc/common" />
+					<Add directory="../inc/linux" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="inc/common" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add option="-mcpu=mpcore -mfp16-format=ieee -mfpu=neon-fp16 -ffast-math" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add option="-m64" />
+					<Add library="GL" />
+					<Add library="GLEW" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add library="stdc++" />
+					<Add library="gdal" />
+				</Linker>
+			</Target>
+			<Target title="Debug [WIN32]">
+				<Option platforms="Windows;" />
+				<Option output="build/mapedit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c++0x" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option='-DPROJECT_NAME=&quot;MapEdit&quot;' />
+					<Add option="-DMAJOR_VER=0" />
+					<Add option="-DMINOR_VER=0" />
+					<Add option="-DPATCH_VER=1" />
+					<Add option="-DHARDWARE_RENDERER" />
+					<Add option="-DLANG=EN_US" />
+					<Add directory="../inc/common" />
+					<Add directory="../inc/linux" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="include/common" />
+					<Add directory="inc/common" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="GL" />
+					<Add library="GLEW" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add library="stdc++" />
+				</Linker>
+			</Target>
+			<Target title="Debug [MAC]">
+				<Option platforms="Mac;" />
+				<Option output="build/mapedit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c++0x" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option='-DPROJECT_NAME=&quot;MapEdit&quot;' />
+					<Add option="-DMAJOR_VER=0" />
+					<Add option="-DMINOR_VER=0" />
+					<Add option="-DPATCH_VER=1" />
+					<Add option="-DHARDWARE_RENDERER" />
+					<Add option="-DLANG=EN_US" />
+					<Add directory="../inc/common" />
+					<Add directory="../inc/linux" />
+					<Add directory="/usr/include/freetype2" />
+					<Add directory="include/common" />
+					<Add directory="inc/common" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="GL" />
+					<Add library="GLEW" />
+					<Add library="freetype" />
+					<Add library="X11" />
+					<Add library="stdc++" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../inc/common/beziercurve.h" />
+		<Unit filename="../inc/common/errors.h" />
+		<Unit filename="../inc/common/errors_en_us.h" />
+		<Unit filename="../inc/common/fontface.h" />
+		<Unit filename="../inc/common/menubar.h" />
+		<Unit filename="../inc/common/messages.h" />
+		<Unit filename="../inc/common/messages_en_us.h" />
+		<Unit filename="../inc/common/opengl_shader.h" />
+		<Unit filename="../inc/common/renderer.h" />
+		<Unit filename="../inc/common/static_text.h" />
+		<Unit filename="../inc/common/window.h" />
+		<Unit filename="../inc/linux/appwindow.h" />
+		<Unit filename="../inc/linux/print_log_console.h" />
+		<Unit filename="../src/common/LiberationSans-Regular.ttf" />
+		<Unit filename="../src/common/basic.frag" />
+		<Unit filename="../src/common/basic.vert" />
+		<Unit filename="../src/common/beziercurve.cpp" />
+		<Unit filename="../src/common/fontface.cpp" />
+		<Unit filename="../src/common/menubar.cpp" />
+		<Unit filename="../src/common/opengl_shader.cpp" />
+		<Unit filename="../src/common/renderer.cpp" />
+		<Unit filename="../src/common/static_text.cpp" />
+		<Unit filename="../src/common/text_shader.frag" />
+		<Unit filename="../src/common/text_shader.vert" />
+		<Unit filename="../src/linux/appwindow.cpp" />
+		<Unit filename="../src/linux/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

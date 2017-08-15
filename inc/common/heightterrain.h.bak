@@ -1,0 +1,36 @@
+#pragma once
+
+#include "stb_image.h"
+
+class HeightTerrain
+{
+	public:
+		HeightTerrain();
+		virtual ~HeightTerrain();
+
+		enum class DEM_OUTPUT_FORMAT{
+			PNG,
+			TGA
+		};
+
+		enum class DEM_FIDELITY{
+			ONE_DEGREE,
+			THREE_DEGREES
+		};
+
+		//https://en.wikipedia.org/wiki/Shuttle_Radar_Topography_Mission
+		//http://www2.jpl.nasa.gov/srtm/
+		//Server with images can be contacted over HTTPS and is available at:
+		//https://dds.cr.usgs.gov/srtm/version2_1/
+
+		static const char* srtm1DegSource = 	"";
+		static const char* srtm3DegSource = 	"";
+		static const char* srtm30DegSource = 	"";
+
+		unsigned int loadFromFTP(const char* internetAdress, unsigned int portNr);
+		unsigned int loadFromLocalFile(const char* filePath);
+		unsigned int renderToLocalFile(const char* filePath);
+	protected:
+
+	private:
+};

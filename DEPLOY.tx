@@ -1,0 +1,45 @@
+==============================================================================================
+				PRODUCTION DEPLOYMENT SETUP
+==============================================================================================
+
+Step 1:	Launch an Amazon AWS instance. Download the key and chmod 400 it, otherwise SSH
+	will complain.
+Step 2:	Login into the instance using the following command, replace values, etc.:
+
+		ssh -i /home/felix/examplekey.pem ubuntu@ec2-52-59-220-80.eu-central-1.compute.amazonaws.com
+
+Step 3:	TO INSTALL OPENCL, do the following:
+
+		[Intel, t2.nano dev]
+		sudo -i
+		cd ~/build/
+		wget http://registrationcenter-download.intel.com/akdlm/irc_nas/9019/opencl_runtime_16.1.1_x64_ubuntu_6.4.0.25.tgz
+		tar -xvf http://registrationcenter-download.intel.com/akdlm/irc_nas/9019/opencl_runtime_16.1.1_x64_ubuntu_6.4.0.25.tgz
+		cd opencl_runtime_16.1.1_x64_ubuntu_6.4.0.25.tgz
+		./install.sh
+
+		[NVIDIA, g2 / g4 prod]
+		//TODO
+
+Step 4:	TO INSTALL PROTOBUF, you must compile from source. IMPORTANT: Install the libraries and tools first
+	
+		sudo apt install gcc g++ make autoconf libtool
+		wget https://github.com/google/protobuf/archive/master.zip
+		unzip master.zip
+		cd protobuf-master
+		./autogen.sh
+		./configure --prefix=/usr
+		make
+		make install
+
+Step 5:	Verify that the following libraries are installed. 
+	These are the production libraries so you don't have to apt search for them every time.
+	
+		libglew1.13 libgdal1i libzip4
+
+Step 6:	Open another terminal, verify that 'scp' is installed. Use the following command to use secure copy:
+
+		scp -i examplekey.pem /home/felix/Development/mapedit/mapedit/build.zip -r ubuntu@ec2-52-59-220-80.eu-central-1.compute.amazonaws.com:~/
+
+Step 7:	Once the application is running, start the deamon [NOT YET IMPLEMENTED]. It will tell you what port the application is listening for connections
+Step 8:	Make an IP-bound TCP security rule.

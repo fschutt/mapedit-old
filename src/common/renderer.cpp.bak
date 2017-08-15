@@ -1,0 +1,49 @@
+#include "renderer.h"
+
+Renderer::Renderer()
+{
+    //Compile all shaders
+}
+
+Renderer::~Renderer()
+{
+    //dtor
+}
+
+void Renderer::addText(const char* text, FontFace* face, unsigned int size, glm::vec3 color)
+{
+
+}
+
+void Renderer::addBezier(BezierCurve* bezierCurve)
+{
+
+}
+
+void Renderer::addLine(SCREEN_POSITION begin, SCREEN_POSITION end)
+{
+
+}
+
+OpenGLShader* Renderer::getShaderByName(const char* shaderName)
+{
+    //TODO
+    return nullptr;
+}
+
+void Renderer::draw()
+{
+
+}
+
+void Renderer::addPoint(SCREEN_POSITION& p)
+{
+	
+    printf("%f\t%f\n", p.x, p.y);
+}
+
+void Renderer::draw(OUTPUT_MODE, const char* filePath)
+{
+
+}
+

@@ -1,0 +1,73 @@
+#pragma once
+#include "glm/glm.hpp"
+#include <stdarg.h>
+#include <vector>
+
+#define PI 3.141592
+
+struct Renderer;
+
+struct POINT{
+    POINT() { };
+    POINT(float x, float y) : x(x), y(y) { };
+    ~POINT(){ };
+    float x;
+    float y;
+};
+
+//Straight line
+struct LINE{
+    LINE() { };
+    ~LINE(){ };
+    std::vector<POINT*> points;
+};
+
+//Polygon
+struct POLYGON{
+    POLYGON() { };
+    POLYGON(float x, float y, int epsgCode) : x(x), y(y), epsgCode(epsgCode) { };
+    ~POLYGON(){ };
+    std::vector<LINE*> lines;
+};
+
+struct MULTIPOLYGON{
+    MULTIPOLYGON() { };
+    ~MULTIPOLYGON(){ };
+
+    enum RELATION = {
+        OUTER,
+        INNER
+    };
+
+    std::vector<std::pair<POLYGON*, RELATION>> polygons;
+};
+
+
+struct BezierHandle{
+    BezierHandle(){ };
+    BezierHandle(float x, float y) : x(x), y(y) { };
+    ~BezierHandle() { };
+    BezierHandle* prev = nullptr;
+    BezierHandle* next = nullptr;
+    float x;
+    float y;
+};
+
+struct BezierCurve
+{
+        BezierCurve(Renderer* renderer,unsigned int numExtraPoints, ...);
+        virtual ~BezierCurve();
+
+        //First linked list stores the bezier handles
+        std::vector<BezierHandle> handles;
+        Renderer* renderer = nullptr;
+
+        float distanceTolerance = 0.03*0.03;
+        float angleTolerance = 5; //degrees
+        unsigned int handleCount = 0;
+
+        void solveForPoints();
+private:
+        void recursiveSolveForPoints(BezierHandle p1, BezierHandle p2, BezierHandle p3, BezierHandle p4);
+
+};

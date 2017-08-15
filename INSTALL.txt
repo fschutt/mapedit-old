@@ -1,0 +1,49 @@
+==============================================================================================
+				DEVELOPMENT ENVIRONMENT SETUP
+==============================================================================================
+
+Step 1: Get required libraries
+
+	sudo apt install libosmesa6-dev			(OpenGL)
+	sudo apt install libfreetype6-dev		(FreeType)
+	sudo apt install libzip-dev				(ZIP)
+	sudo apt install zlib1g-dev			    (ZLIB)
+	sudo apt install libgdal-dev			(GDAL)
+	sudo apt install libproj-dev			(proj4)
+	sudo apt install glew-utils			    (OpenGL extension wrangler)
+	sudo apt install libprotobuf-dev		(Google Protocol Buffers)
+	sudo apt install libtool			    (Tool library required by Google)
+ 	sudo apt install libpthread-stubs0-dev		(pthread)
+	sudo apt install libssl-dev			(OpenSSL)
+	sudo apt install libcurl4-openssl-dev		(CURL)
+	sudo apt install uuid-dev			(Unique IDs)
+
+Step 2: Install Intel SDK & Intel OpenCL libraries (on Intel processors)
+	Open a terminal in ./intel-sdk-opencl and execute ./install.sh
+	It will lead you through the installation of the Intel SDK
+
+	To install the Intel SDK, execut the following:
+
+	sudo cp -R intel-opencl/* /
+	sudo ldconfig
+
+Step 2.5: Install protoc compiler
+	NOTE: This step is only required if the osmformat.proto has
+	changed. Otherwise just use the existing .pb.cc and .pb.h files.
+
+	See: Google GitHub repo for protobuf installation instructions.
+	Compile the osmformat.proto file (found in /src/common) with:
+
+	protoc --proto_path=. --cpp_out=. osmformat.proto
+
+	This generates the files osmformat.pb.cc and osmformat.pb.h
+
+Step 3: Install Code::Blocks and build
+	To avoid mangling with complicated build systems, Code::Blocks is
+	required. Run:
+
+	sudo apt install codeblocks
+
+	Then open the /mapedit/mapedit.cbp and build.
+
+That' it!

@@ -1,0 +1,1558 @@
+# depslib dependency file v1.0
+1473885901 source:/home/felix/Development/mapedit/inc/common/glm/detail/dummy.cpp
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+	<limits>
+	<glm/vec3.hpp>
+	<glm/geometric.hpp>
+	<glm/vec3.hpp>
+	<glm/vec4.hpp>
+	<glm/mat4x4.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/vec2.hpp>
+	<glm/packing.hpp>
+	<glm/integer.hpp>
+	<glm/gtc/type_precision.hpp>
+	<glm/vec3.hpp>
+	<glm/geometric.hpp>
+	<glm/exponential.hpp>
+	<glm/gtc/random.hpp>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/_fixes.hpp
+	<cmath>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1478948828 /home/felix/Development/mapedit/inc/common/glm/detail/setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/simd/platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_float.hpp
+	"setup.hpp"
+
+1474219786 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/precision.hpp
+	"setup.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat.hpp
+	"precision.hpp"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/vec2.hpp
+	"detail/type_vec2.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/_swizzle.hpp
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/_swizzle_func.hpp
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec2.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/vec3.hpp
+	"detail/type_vec3.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec3.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/vec4.hpp
+	"detail/type_vec4.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec4.inl
+	"type_vec4_simd.inl"
+
+1476301215 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec4_simd.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x2.inl
+	"func_matrix.hpp"
+
+1476301215 /home/felix/Development/mapedit/inc/common/glm/detail/func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x3.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat2x4.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1477988131 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x2.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x3.inl
+	"func_matrix.hpp"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat3x4.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x2.inl
+
+1476612658 /home/felix/Development/mapedit/inc/common/glm/mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x3.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1478039704 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_mat4x4_simd.inl
+
+1478039704 /home/felix/Development/mapedit/inc/common/glm/detail/func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/geometric.hpp
+	"detail/func_geometric.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/detail/type_vec1.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_vector_relational_simd.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/simd/exponential.h
+	"platform.h"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1478039704 /home/felix/Development/mapedit/inc/common/glm/detail/func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/simd/common.h
+	"platform.h"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/simd/geometric.h
+	"common.h"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/simd/matrix.h
+	"geometric.h"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_trigonometric_simd.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/exponential.hpp
+	"detail/func_exponential.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/common.hpp
+	"detail/func_common.hpp"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/packing.hpp
+	"detail/func_packing.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1478108259 /home/felix/Development/mapedit/inc/common/glm/detail/func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/type_half.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_packing_simd.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/matrix.hpp
+	"detail/func_matrix.hpp"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/integer.hpp
+	"detail/func_integer.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/detail/func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1478723989 /home/felix/Development/mapedit/inc/common/glm/detail/func_integer_simd.inl
+	"../simd/integer.h"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/simd/integer.h
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/ext.hpp
+	"glm.hpp"
+	"./gtc/bitfield.hpp"
+	"./gtc/color_space.hpp"
+	"./gtc/constants.hpp"
+	"./gtc/epsilon.hpp"
+	"./gtc/functions.hpp"
+	"./gtc/integer.hpp"
+	"./gtc/matrix_access.hpp"
+	"./gtc/matrix_integer.hpp"
+	"./gtc/matrix_inverse.hpp"
+	"./gtc/matrix_transform.hpp"
+	"./gtc/noise.hpp"
+	"./gtc/packing.hpp"
+	"./gtc/quaternion.hpp"
+	"./gtc/random.hpp"
+	"./gtc/reciprocal.hpp"
+	"./gtc/round.hpp"
+	"./gtc/type_precision.hpp"
+	"./gtc/type_ptr.hpp"
+	"./gtc/ulp.hpp"
+	"./gtc/vec1.hpp"
+	"./gtc/type_aligned.hpp"
+	"./gtx/associated_min_max.hpp"
+	"./gtx/bit.hpp"
+	"./gtx/closest_point.hpp"
+	"./gtx/color_space.hpp"
+	"./gtx/color_space_YCoCg.hpp"
+	"./gtx/compatibility.hpp"
+	"./gtx/component_wise.hpp"
+	"./gtx/dual_quaternion.hpp"
+	"./gtx/euler_angles.hpp"
+	"./gtx/extend.hpp"
+	"./gtx/extended_min_max.hpp"
+	"./gtx/fast_exponential.hpp"
+	"./gtx/fast_square_root.hpp"
+	"./gtx/fast_trigonometry.hpp"
+	"./gtx/gradient_paint.hpp"
+	"./gtx/handed_coordinate_space.hpp"
+	"./gtx/integer.hpp"
+	"./gtx/intersect.hpp"
+	"./gtx/log_base.hpp"
+	"./gtx/matrix_cross_product.hpp"
+	"./gtx/matrix_interpolation.hpp"
+	"./gtx/matrix_major_storage.hpp"
+	"./gtx/matrix_operation.hpp"
+	"./gtx/matrix_query.hpp"
+	"./gtx/mixed_product.hpp"
+	"./gtx/norm.hpp"
+	"./gtx/normal.hpp"
+	"./gtx/normalize_dot.hpp"
+	"./gtx/number_precision.hpp"
+	"./gtx/optimum_pow.hpp"
+	"./gtx/orthonormalize.hpp"
+	"./gtx/perpendicular.hpp"
+	"./gtx/polar_coordinates.hpp"
+	"./gtx/projection.hpp"
+	"./gtx/quaternion.hpp"
+	"./gtx/raw_data.hpp"
+	"./gtx/rotate_vector.hpp"
+	"./gtx/spline.hpp"
+	"./gtx/std_based_type.hpp"
+	"./gtx/string_cast.hpp"
+	"./gtx/transform.hpp"
+	"./gtx/transform2.hpp"
+	"./gtx/vector_angle.hpp"
+	"./gtx/vector_query.hpp"
+	"./gtx/wrap.hpp"
+	"./gtx/scalar_multiplication.hpp"
+	"./gtx/range.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/bitfield.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/type_int.hpp"
+	"../detail/_vectorize.hpp"
+	<limits>
+	"bitfield.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/bitfield.inl
+	"../simd/integer.h"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/color_space.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../exponential.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	<limits>
+	"color_space.inl"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/color_space.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/constants.inl
+	<limits>
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"epsilon.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/gtc/quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/quaternion_simd.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/functions.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/type_vec2.hpp"
+	"functions.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/functions.inl
+	"../detail/func_exponential.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/integer.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/func_common.hpp"
+	"../detail/func_integer.hpp"
+	"../detail/func_exponential.hpp"
+	<limits>
+	"integer.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/integer.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_access.hpp
+	"../detail/setup.hpp"
+	"matrix_access.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_access.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_integer.hpp
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_inverse.hpp
+	"../detail/setup.hpp"
+	"../matrix.hpp"
+	"../mat2x2.hpp"
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"matrix_inverse.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_inverse.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1478722562 /home/felix/Development/mapedit/inc/common/glm/gtc/matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/noise.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/_noise.hpp"
+	"../geometric.hpp"
+	"../common.hpp"
+	"../vector_relational.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"noise.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/detail/_noise.hpp
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../common.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/noise.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/packing.hpp
+	"type_precision.hpp"
+	"packing.inl"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../gtc/vec1.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/vec1.hpp
+	"../glm.hpp"
+	"../detail/type_vec1.hpp"
+	"vec1.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/vec1.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/type_precision.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/packing.inl
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../detail/type_half.hpp"
+	<cstring>
+	<limits>
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/random.hpp
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"random.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/gtc/random.inl
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<cstdlib>
+	<ctime>
+	<cassert>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/reciprocal.hpp
+	"../detail/setup.hpp"
+	"reciprocal.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/reciprocal.inl
+	"../trigonometric.hpp"
+	<limits>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/round.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/_vectorize.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	<limits>
+	"round.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/round.inl
+	"../detail/func_integer.hpp"
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtc/type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/type_ptr.inl
+	<cstring>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/ulp.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/type_int.hpp"
+	"ulp.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/ulp.inl
+	"../detail/type_int.hpp"
+	<cmath>
+	<cfloat>
+	<limits>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtc/type_aligned.hpp
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/vec1.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/associated_min_max.hpp
+	"../glm.hpp"
+	"associated_min_max.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/associated_min_max.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtx/bit.hpp
+	"../gtc/bitfield.hpp"
+	"bit.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/bit.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/closest_point.hpp
+	"../glm.hpp"
+	"closest_point.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/closest_point.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/color_space.hpp
+	"../glm.hpp"
+	"color_space.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/color_space.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/color_space_YCoCg.hpp
+	"../glm.hpp"
+	"color_space_YCoCg.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/color_space_YCoCg.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtx/compatibility.hpp
+	"../glm.hpp"
+	"../gtc/quaternion.hpp"
+	<cfloat>
+	<cmath>
+	"compatibility.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/compatibility.inl
+	<limits>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/component_wise.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"component_wise.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/component_wise.inl
+	<limits>
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtx/dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1477988132 /home/felix/Development/mapedit/inc/common/glm/gtx/dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtx/euler_angles.hpp
+	"../glm.hpp"
+	"euler_angles.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/euler_angles.inl
+	"compatibility.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/extend.hpp
+	"../glm.hpp"
+	"extend.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/extend.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/extended_min_max.hpp
+	"../glm.hpp"
+	"extended_min_max.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/extended_min_max.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_exponential.hpp
+	"../glm.hpp"
+	"fast_exponential.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_exponential.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_square_root.hpp
+	"../common.hpp"
+	"../exponential.hpp"
+	"../geometric.hpp"
+	"fast_square_root.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_square_root.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_trigonometry.hpp
+	"../gtc/constants.hpp"
+	"fast_trigonometry.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/fast_trigonometry.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/gradient_paint.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"gradient_paint.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/optimum_pow.hpp
+	"../glm.hpp"
+	"optimum_pow.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/optimum_pow.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/gradient_paint.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/handed_coordinate_space.hpp
+	"../glm.hpp"
+	"handed_coordinate_space.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/handed_coordinate_space.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/integer.hpp
+	"../glm.hpp"
+	"../gtc/integer.hpp"
+	"integer.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/integer.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/intersect.hpp
+	<cfloat>
+	<limits>
+	"../glm.hpp"
+	"../geometric.hpp"
+	"../gtx/closest_point.hpp"
+	"../gtx/vector_query.hpp"
+	"intersect.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/vector_query.hpp
+	"../glm.hpp"
+	<cfloat>
+	<limits>
+	"vector_query.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/vector_query.inl
+	<cassert>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/intersect.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/log_base.hpp
+	"../glm.hpp"
+	"log_base.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/log_base.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_cross_product.hpp
+	"../glm.hpp"
+	"matrix_cross_product.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_cross_product.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_interpolation.hpp
+	"../glm.hpp"
+	"matrix_interpolation.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_interpolation.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_major_storage.hpp
+	"../glm.hpp"
+	"matrix_major_storage.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_major_storage.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_operation.hpp
+	"../glm.hpp"
+	"matrix_operation.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_operation.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_query.hpp
+	"../glm.hpp"
+	"../gtx/vector_query.hpp"
+	<limits>
+	"matrix_query.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/matrix_query.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/mixed_product.hpp
+	"../glm.hpp"
+	"mixed_product.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/mixed_product.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/norm.hpp
+	"../detail/func_geometric.hpp"
+	"../gtx/quaternion.hpp"
+	"norm.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/norm.hpp"
+	"quaternion.inl"
+
+1474707156 /home/felix/Development/mapedit/inc/common/glm/gtx/quaternion.inl
+	<limits>
+	"../gtc/constants.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/norm.inl
+	"../detail/precision.hpp"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/normal.hpp
+	"../glm.hpp"
+	"normal.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/normal.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/normalize_dot.hpp
+	"../gtx/fast_square_root.hpp"
+	"normalize_dot.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/normalize_dot.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/number_precision.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"number_precision.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/number_precision.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/orthonormalize.hpp
+	"../vec3.hpp"
+	"../mat3x3.hpp"
+	"../geometric.hpp"
+	"orthonormalize.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/orthonormalize.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/perpendicular.hpp
+	"../glm.hpp"
+	"../gtx/projection.hpp"
+	"perpendicular.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/projection.hpp
+	"../geometric.hpp"
+	"projection.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/projection.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/perpendicular.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/polar_coordinates.hpp
+	"../glm.hpp"
+	"polar_coordinates.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/polar_coordinates.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/raw_data.hpp
+	"../detail/setup.hpp"
+	"../detail/type_int.hpp"
+	"raw_data.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/raw_data.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/transform.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/rotate_vector.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/spline.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"spline.inl"
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/spline.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/std_based_type.hpp
+	"../glm.hpp"
+	<cstdlib>
+	"std_based_type.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/std_based_type.inl
+
+1478947838 /home/felix/Development/mapedit/inc/common/glm/gtx/string_cast.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/dual_quaternion.hpp"
+	<string>
+	"string_cast.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/string_cast.inl
+	<cstdarg>
+	<cstdio>
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/transform2.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"transform2.inl"
+
+1478041056 /home/felix/Development/mapedit/inc/common/glm/gtx/transform2.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/vector_angle.hpp
+	"../glm.hpp"
+	"../gtc/epsilon.hpp"
+	"../gtx/quaternion.hpp"
+	"../gtx/rotate_vector.hpp"
+	"vector_angle.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/vector_angle.inl
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/wrap.hpp
+	"../glm.hpp"
+	"../gtc/vec1.hpp"
+	"wrap.inl"
+
+1473885902 /home/felix/Development/mapedit/inc/common/glm/gtx/wrap.inl
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/scalar_multiplication.hpp
+	"../detail/setup.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	<type_traits>
+
+1473885901 /home/felix/Development/mapedit/inc/common/glm/gtx/range.hpp
+	"../detail/setup.hpp"
+	"../gtc/type_ptr.hpp"
+	"../gtc/vec1.hpp"
+
+1473885901 source:/home/felix/Development/mapedit/inc/common/glm/detail/glm.cpp
+	<glm/glm.hpp>
+	<glm/gtc/quaternion.hpp>
+	<glm/gtx/dual_quaternion.hpp>
+
+1482356929 source:/home/felix/Development/mapedit/src/common/menubar.cpp
+	<GL/glew.h>
+	<GL/gl.h>
+	"menubar.h"
+	"print_log_console.h"
+	<ft2build.h>
+
+1481478853 /home/felix/Development/mapedit/inc/common/menubar.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1483584700 /home/felix/Development/mapedit/inc/common/static_text.h
+	<map>
+	"glm/glm.hpp"
+	"fontface.h"
+
+1460750629 /usr/include/freetype2/ft2build.h
+	<freetype/config/ftheader.h>
+
+1460750629 /usr/include/freetype2/freetype/config/ftheader.h
+	<x86_64-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<x86_64-linux-gnux32/freetype2/freetype/config/ftheader.h>
+	<i386-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<aarch64-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<alpha-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<arm-linux-gnueabihf/freetype2/freetype/config/ftheader.h>
+	<arm-linux-gnueabi/freetype2/freetype/config/ftheader.h>
+	<hppa-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<ia64-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<m68k-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<mipsel-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<mips64el-linux-gnuabin32/freetype2/freetype/config/ftheader.h>
+	<mips64el-linux-gnuabi64/freetype2/freetype/config/ftheader.h>
+	<mips-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<mips64-linux-gnuabin32/freetype2/freetype/config/ftheader.h>
+	<mips64-linux-gnuabi64/freetype2/freetype/config/ftheader.h>
+	<or1k-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<powerpc-linux-gnuspe/freetype2/freetype/config/ftheader.h>
+	<powerpc64le-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<powerpc64-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<powerpc-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<s390x-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<s390-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<sh4-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<sparc64-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<sparc-linux-gnu/freetype2/freetype/config/ftheader.h>
+	<x86_64-kfreebsd-gnu/freetype2/freetype/config/ftheader.h>
+	<i386-kfreebsd-gnu/freetype2/freetype/config/ftheader.h>
+	<i386-gnu/freetype2/freetype/config/ftheader.h>
+
+1482952400 /home/felix/Development/mapedit/inc/linux/print_log_console.h
+	<stdio.h>
+
+1482997797 source:/home/felix/Development/mapedit/src/common/static_text.cpp
+	<map>
+	"static_text.h"
+	"glm/ext.hpp"
+	"print_log_console.h"
+	"errors.h"
+	"opengl_shader.h"
+
+1482519840 /home/felix/Development/mapedit/src/common/text_shader.vert
+
+1481660773 /home/felix/Development/mapedit/src/common/text_shader.frag
+
+1483678248 source:/home/felix/Development/mapedit/src/linux/appwindow.cpp
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xatom.h>
+	<X11/Xutil.h>
+	<X11/Xlocale.h>
+	<X11/Xresource.h>
+	<X11/keysymdef.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<GL/glu.h>
+	<string>
+	<sstream>
+	<math.h>
+	"appwindow.h"
+	"print_log_console.h"
+	"errors.h"
+	"messages.h"
+	"job.h"
+	"renderer.h"
+
+1483258141 /home/felix/Development/mapedit/inc/linux/appwindow.h
+	<X11/X.h>
+	<X11/Xlib.h>
+	<X11/Xutil.h>
+	<X11/Xos.h>
+	<X11/Xatom.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<GL/glu.h>
+
+1481486186 /home/felix/Development/mapedit/inc/common/window.h
+
+1481481919 /home/felix/Development/mapedit/inc/common/errors.h
+	"errors_en_us.h"
+
+1481486155 /home/felix/Development/mapedit/inc/common/errors_en_us.h
+
+1481486167 /home/felix/Development/mapedit/inc/common/messages.h
+	"messages_en_us.h"
+
+1481486176 /home/felix/Development/mapedit/inc/common/messages_en_us.h
+
+1480868651 /home/felix/Development/mapedit/src/common/basic.vert
+
+1480869965 /home/felix/Development/mapedit/src/common/basic.frag
+
+1483672533 source:/home/felix/Development/mapedit/src/linux/main.cpp
+	"server.h"
+	<malloc.h>
+	"appwindow.h"
+	"heightterrain.h"
+	"job.h"
+	"opengl_shader.h"
+	"beziercurve.h"
+	"fontface.h"
+	"print_log_console.h"
+	"jobmanager.h"
+	"map_defs.h"
+
+1482671709 /home/felix/Development/mapedit/inc/common/opengl_shader.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1482671717 source:/home/felix/Development/mapedit/src/common/opengl_shader.cpp
+	"opengl_shader.h"
+	"print_log_console.h"
+	"errors.h"
+
+1483584790 source:/home/felix/Development/mapedit/src/common/beziercurve.cpp
+	"beziercurve.h"
+	<stdarg.h>
+	<stdio.h>
+	<math.h>
+	"print_log_console.h"
+	"renderer.h"
+	"map_defs.h"
+
+1483584633 /home/felix/Development/mapedit/inc/common/beziercurve.h
+	"glm/glm.hpp"
+	<stdarg.h>
+	<vector>
+	"bezierhandle.h"
+	"line.h"
+
+1483589157 source:/home/felix/Development/mapedit/src/common/renderer.cpp
+	"renderer.h"
+	<proj_api.h>
+	<vector>
+	<utility>
+	<map>
+	<algorithm>
+	"print_log_console.h"
+	"errors.h"
+	"messages.h"
+	"static_text.h"
+	"glm/ext.hpp"
+	"map_defs.h"
+	"polygon.h"
+	"jobmanager.h"
+	"basic.vert"
+	"basic.frag"
+	"text_shader.vert"
+	"text_shader.frag"
+
+1483584689 /home/felix/Development/mapedit/inc/common/renderer.h
+	<GL/glew.h>
+	<GL/gl.h>
+	<glm/glm.hpp>
+	<map>
+	<vector>
+	<utility>
+	"fontface.h"
+	"opengl_shader.h"
+	"layer.h"
+	"point.h"
+	"straight_line.h"
+	"beziercurve.h"
+	"bezierhandle.h"
+	"multi_polygon.h"
+	"static_text.h"
+	"job.h"
+	"jobmanager.h"
+
+1483118023 source:/home/felix/Development/mapedit/src/common/fontface.cpp
+	"fontface.h"
+	"print_log_console.h"
+	"errors.h"
+	"messages.h"
+
+1483059326 /home/felix/Development/mapedit/inc/common/fontface.h
+	<freetype/ftsnames.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<ft2build.h>
+	<map>
+	"glm/glm.hpp"
+
+1460750629 /usr/include/freetype2/freetype/ftsnames.h
+	<ft2build.h>
+
+1483249782 source:/home/felix/Development/mapedit/src/common/heightterrain.cpp
+	"heightterrain.h"
+	"print_log_console.h"
+	"server.h"
+	<zip.h>
+	<string>
+	<math.h>
+	"map_defs.h"
+
+1483244141 /home/felix/Development/mapedit/inc/common/heightterrain.h
+	"stb_image.h"
+	<vector>
+	<time.h>
+	"job.h"
+
+1482408677 /home/felix/Development/mapedit/inc/common/stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1483066920 source:/home/felix/Development/mapedit/src/linux/server.cpp
+	"server.h"
+	"print_log_console.h"
+	"string.h"
+	<stdio.h>
+	<map>
+	<regex>
+
+1483727071 /home/felix/Development/mapedit/inc/linux/server.h
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/stat.h>
+	<netinet/in.h>
+	<errno.h>
+	<queue>
+	<X11/X.h>
+	<X11/Xlib.h>
+	<GL/glew.h>
+	<GL/gl.h>
+	<GL/glx.h>
+	<GL/glext.h>
+	"heightterrain.h"
+
+1483728780 /home/felix/Development/mapedit/inc/common/map_defs.h
+
+1483670113 source:/home/felix/Development/mapedit/src/common/job.cpp
+	"job.h"
+	"print_log_console.h"
+	"CL/cl.h"
+	"fileformat.pb.h"
+	"osmformat.pb.h"
+	"zlib.h"
+	<stdio.h>
+	<time.h>
+	<proj_api.h>
+	"renderer.h"
+	"map_defs.h"
+	"opencl/saxpy.cl"
+
+1483645000 /home/felix/Development/mapedit/inc/common/job.h
+	<gdal/gdal_priv.h>
+	<gdal/cpl_conv.h>
+	<vector>
+	<CL/cl.h>
+	<pthread.h>
+	"style.h"
+
+1483584744 /home/felix/Development/mapedit/inc/common/style.h
+	"time.h"
+	<vector>
+	<map>
+	"glm/glm.hpp"
+	"glm/ext.hpp"
+	"fontface.h"
+
+1483672569 source:/home/felix/Development/mapedit/src/common/jobmanager.cpp
+	"jobmanager.h"
+	"style.h"
+	<stdio.h>
+	"tinyxml2/tinyxml2.h"
+	<pthread.h>
+	"renderer.h"
+	"map_defs.h"
+
+1483670511 /home/felix/Development/mapedit/inc/common/jobmanager.h
+	<vector>
+	"renderer.h"
+
+1483546470 source:/home/felix/Development/mapedit/src/common/style.cpp
+	"style.h"
+
+1482883305 /home/felix/Development/mapedit/src/common/opencl/saxpy.cl
+
+1482629816 source:/home/felix/Development/mapedit/src/common/osmformat.pb.cc
+	"osmformat.pb.h"
+	<algorithm>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/stubs/port.h>
+	<google/protobuf/stubs/once.h>
+	<google/protobuf/io/coded_stream.h>
+	<google/protobuf/wire_format_lite_inl.h>
+	<google/protobuf/io/zero_copy_stream_impl_lite.h>
+
+1482629816 /home/felix/Development/mapedit/inc/common/osmformat.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/arena.h>
+	<google/protobuf/arenastring.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/metadata.h>
+	<google/protobuf/message_lite.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+	<google/protobuf/generated_enum_util.h>
+
+1482633772 /home/felix/Development/mapedit/inc/common/fileformat.pb.h
+	<string>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/arena.h>
+	<google/protobuf/arenastring.h>
+	<google/protobuf/generated_message_util.h>
+	<google/protobuf/metadata.h>
+	<google/protobuf/message_lite.h>
+	<google/protobuf/repeated_field.h>
+	<google/protobuf/extension_set.h>
+
+1482633772 source:/home/felix/Development/mapedit/src/common/fileformat.pb.cc
+	"fileformat.pb.h"
+	<algorithm>
+	<google/protobuf/stubs/common.h>
+	<google/protobuf/stubs/port.h>
+	<google/protobuf/stubs/once.h>
+	<google/protobuf/io/coded_stream.h>
+	<google/protobuf/wire_format_lite_inl.h>
+	<google/protobuf/io/zero_copy_stream_impl_lite.h>
+
+1482678234 /home/felix/Development/mapedit/inc/common/quad.h
+	<GL/glew.h>
+	<GL/gl.h>
+
+1482700136 source:/home/felix/Development/mapedit/src/common/quad.cpp
+	<GL/glew.h>
+	<GL/gl.h>
+	"quad.h"
+	"print_log_console.h"
+	<ft2build.h>
+
+1482983473 /home/felix/Development/mapedit/inc/common/bezierhandle.h
+	"point.h"
+
+1483584681 /home/felix/Development/mapedit/inc/common/point.h
+	"line.h"
+
+1483027785 /home/felix/Development/mapedit/inc/common/line.h
+
+1482952840 /home/felix/Development/mapedit/inc/common/layer.h
+
+1482997835 /home/felix/Development/mapedit/inc/common/straight_line.h
+	<vector>
+	"line.h"
+
+1482997589 /home/felix/Development/mapedit/inc/common/multi_polygon.h
+	<vector>
+
+1482995282 source:/home/felix/Development/mapedit/src/common/bezierhandle.cpp
+	"bezierhandle.h"
+
+1482952685 source:/home/felix/Development/mapedit/src/common/layer.cpp
+	"layer.h"
+
+1482980321 source:/home/felix/Development/mapedit/src/common/line.cpp
+	"line.h"
+
+1482956279 source:/home/felix/Development/mapedit/src/common/multi_polygon.cpp
+	"multi_polygon.h"
+
+1483584882 source:/home/felix/Development/mapedit/src/common/point.cpp
+	"point.h"
+	"bezierhandle.h"
+
+1482956188 source:/home/felix/Development/mapedit/src/common/polygon.cpp
+	"polygon.h"
+
+1482995569 /home/felix/Development/mapedit/inc/common/polygon.h
+	"renderer.h"
+
+1483026817 source:/home/felix/Development/mapedit/src/common/straight_line.cpp
+	"straight_line.h"
+	<stdarg.h>
+	"renderer.h"
+
+1482593957 /home/felix/Development/mapedit/inc/common/tinyxml2/tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<stdint.h>
+	<android/log.h>
+	<assert.h>
+
+1483053072 source:/home/felix/Development/mapedit/src/common/tinyxml2/tinyxml2.cpp
+	"tinyxml2/tinyxml2.h"
+	<new>
+	<stddef.h>
+	<stdarg.h>
+	<cstddef>
+	<cstdarg>
+
